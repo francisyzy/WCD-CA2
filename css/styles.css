@@ -46,7 +46,7 @@ body {
 	color: #48443e;
 	background: #fff;
 	font: 12px/15px 'Merriweather', "Helvetica Neue", "Helvetica", sans-serif;
-	min-width: 1280px;
+	/* min-width: 1280px; */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	margin: 0;
@@ -313,10 +313,12 @@ a:hover, a:focus {
 }
 .info-box.left .img-box{
 	float: left;
-	margin: 21px 0 0;
+	/* margin: 21px 0 0; */
 }
 .info-box .img-box img{
 	display: block;
+	max-width: 454px;
+	max-height: 642px;
 }
 #main a:visited{
 	color: #48443e;
@@ -542,6 +544,86 @@ a:hover, a:focus {
     animation-name: bounceInRight
 }
 
+@-webkit-keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+    transform: translateX(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+
+  80% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+    -ms-transform: translateX(-2000px);
+    transform: translateX(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+
+  80% {
+    -webkit-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.bounceInLeft {
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+}
+
+@-webkit-keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+    transform: translateX(2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+
+  80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
 
 /*forms*/
 
@@ -638,7 +720,11 @@ button[data-balloon]{overflow:visible}[data-balloon]{position:relative}[data-bal
 
 /* Media Query mobile */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
+	.welcome{
+		display: none;
+	}
+	
 	#navigation{
 		display: none;
 	}
