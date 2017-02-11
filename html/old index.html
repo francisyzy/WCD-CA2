@@ -9,7 +9,11 @@
     <!-- include the site stylesheet -->
     <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
     <!-- include the site googlefonts -->
+	<!-- Illegal character in query: | is not allowed.
     <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
+	-->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<!-- include the site favicon -->
 	<link rel="icon" type="image/png" href="../images/YZYicon.ico">
 	<!-- Scripts -->
@@ -33,6 +37,7 @@
 		  $("#header").sticky({ topSpacing: 0 });
 		});
 	  </script>
+	-->
 	<!--
 		Francis Inc - Home
 		Filename: index.html
@@ -55,11 +60,6 @@
 					<a href="index.html"><img src="../images/logo.png" width="460" height="67" alt="Francis Inc"></a>
 				</div>
 				<!-- navigation -->
-				<nav class="menuIcon" onclick="menuIcon(this)">
-					<div class="bar1"></div>
-					<div class="bar2"></div>
-					<div class="bar3"></div>
-				</nav>
 				<nav id="navigation">
 					<ul>
 						<li class="active"><a href="#">Home</a></li>
@@ -115,6 +115,5 @@
         </div>
     </footer>
 </div>
-<script type="text/javascript" src="../script/menu.js"></script>
 </body>
 </html>

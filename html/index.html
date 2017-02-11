@@ -9,11 +9,7 @@
     <!-- include the site stylesheet -->
     <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
     <!-- include the site googlefonts -->
-	<!-- Illegal character in query: | is not allowed.
     <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
-	-->
-	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<!-- include the site favicon -->
 	<link rel="icon" type="image/png" href="../images/YZYicon.ico">
 	<!-- Scripts -->
@@ -37,7 +33,6 @@
 		  $("#header").sticky({ topSpacing: 0 });
 		});
 	  </script>
-	-->
 	<!--
 		Francis Inc - Home
 		Filename: index.html
@@ -55,11 +50,26 @@
 	<div class="header">
 		<header id="header">
 			<div class="holder">
+				<div onclick="openNav()">
+					<nav class="menuIcon" onclick="menuIcon(this)">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</nav>
+				</div>
 				<!-- logo -->
 				<div class="logo">
 					<a href="index.html"><img src="../images/logo.png" width="460" height="67" alt="Francis Inc"></a>
 				</div>
 				<!-- navigation -->
+				
+				<div id="Sidenav" class="sidenav">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  <a href="#">Home</a>
+				  <a href="showcase.html">Showcase</a><
+				  <a href="about.html">About</a>
+				</div>
+				
 				<nav id="navigation">
 					<ul>
 						<li class="active"><a href="#">Home</a></li>
@@ -73,7 +83,12 @@
     <!-- main -->
     <main id="main" role="main">
         <div class="holder">
-            <h1 class="randomTyping animated zoomIn">Welcome</h1>
+			<div class="welcome">
+            	<h1 class="randomTyping animated zoomIn">Welcome</h1>
+				<object>
+					<embed src="../images/subtitle.svg">
+				</object>
+			</div>
             <!-- info-box -->
 			<a href="featuredProject.html">
 				<div class="info-box">
@@ -115,5 +130,6 @@
         </div>
     </footer>
 </div>
+<script type="text/javascript" src="../script/menu.js"></script>
 </body>
 </html>
