@@ -258,11 +258,11 @@ a:hover, a:focus {
 /* info-box styles */
 .info-box {
     padding: 0 46px 58px 0;
-    margin-top: 400px;
+    /*margin-top: 400px;*/ /*margin bottom works again */
 }
 .info-box.left {
     padding: 0 0 58px 47px;
-    margin-top: 0; /* horrible code i know but it is required to add the object as margin-bottom does not work for object */
+    /*margin-top: 0;*/ /* horrible code i know but it is required to add the object as margin-bottom does not work for object */
 }
 .info-box:after{
 	content: "";
