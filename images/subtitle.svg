@@ -10,10 +10,10 @@
 			.logo{
 				stroke-dasharray: 400;
 				stroke-dashofffset:0;
-				-webkit-animation: dash 10s linear forwards; /*safari / chrome*/
-				-o-animation: dash 10s linear forwards; /* oprah */
-				-moz-animation: dash 10s linear forwards; /* mozzilla firefox */
-				animation: dash 10s linear forwards; /* IE 8 */
+				-webkit-animation: dash 8s linear forwards; /*safari / chrome*/
+				-o-animation: dash 8s linear forwards; /* oprah */
+				-moz-animation: dash 8s linear forwards; /* mozzilla firefox */
+				animation: dash 8s linear forwards; /* IE 8 */
 				/*-webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
     			/*animation-delay: 2s;*/
 			}

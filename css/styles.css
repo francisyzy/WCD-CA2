@@ -721,11 +721,11 @@ button[data-balloon]{overflow:visible}[data-balloon]{position:relative}[data-bal
 /* Media Query mobile */
 
 @media screen and (max-width: 1000px) {
-	.welcome{
+	.welcome{ /*disable animated welcome screen*/
 		display: none;
 	}
 	
-	#navigation{
+	#navigation{ /*disable normal navigation*/
 		display: none;
 	}
 	.logo{
@@ -764,4 +764,19 @@ button[data-balloon]{overflow:visible}[data-balloon]{position:relative}[data-bal
 		-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
 		transform: rotate(45deg) translate(-8px, -8px) ;
 	}
+	
+	.info-box .txt-area{
+		display: none;
+	}
+	
+	.info-box .img-box img{
+		float: none;
+	}
+	.info-box .img-box{
+		float: none;
+	}
+	.info-box.left .img-box{
+		float: none;
+	}
+	
 }
