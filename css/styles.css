@@ -403,13 +403,19 @@ a:hover, a:focus {
 	float: right;
 	display: block;
 }
-/* Style the list */
+/* Style the breadcrumb */
 ul.breadcrumb {
     padding: 10px 16px;
 	margin-bottom: 10px;
     list-style: none;
     background-color: #eee;
     font-size: 17px;
+}
+
+.article .code{
+	font-family: 'Source Code Pro', monospace;
+	font-size: 14px;
+	line-height: 14px;
 }
 
 /* Display list items side by side */
