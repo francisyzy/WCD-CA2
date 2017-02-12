@@ -921,13 +921,60 @@ button[data-balloon]{overflow:visible}[data-balloon]{position:relative}[data-bal
 	.post-box.left .txt-area {
 		text-align: left;
 	}
+	#main .holder{
+		padding-top: 150px;
+	}
 
+}
+
+/* Media Query reduce font size screen */
+
+@media screen and (max-width: 800px) {
+	.article .txt-area h2{
+		font-size: 38px;
+	}
+	.article .txt-area{
+		font-size: 20px;
+	}
 }
 
 /* Media Query smaller screen */
 
 @media screen and (max-width: 500px) {
-	
-	
+	.logo{
+		width: 340px;
+		height: 50px;
+	}
+	#main .holder{
+		padding: 106px 80px 65px;
+	}
+	.article .txt-area h2{
+		font-size: 28px;
+	}
+	.article .txt-area{
+		font-size: 16px;
+		line-height: 24px;
+	}
 }
 
+/* Media Query smallerer screen */
+@media screen and (max-width: 400px) {
+	.logo{
+		width: 270px;
+		height: 40px;
+		float: right;
+	}
+	#header .holder{
+		padding: 22px 47px 21px 10px;
+	}
+	#main .holder{
+		padding: 106px 40px 65px;
+	}
+	.article .txt-area h2{
+		font-size: 20px;
+	}
+	.article .txt-area{
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
