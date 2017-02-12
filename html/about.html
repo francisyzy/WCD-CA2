@@ -35,11 +35,26 @@
     <!-- header -->
     <header id="header">
         <div class="holder">
+			<div onclick="openNav()">
+				<nav class="menuIcon" onclick="menuIcon(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</nav>
+			</div>
             <!-- logo -->
             <div class="logo">
                 <a href="index.html"><img src="../images/logo.png" width="460" height="67" alt="Francis Inc"></a>
             </div>
             <!-- navigation -->
+			
+			<div id="Sidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" onclick=menuIcon(this)>&times;</a>
+				<a href="index.html">Home</a>
+				<a href="showcase.html">Showcase</a>
+				<a href="#" class="active">About</a>
+			</div>
+			
             <nav id="navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -121,6 +136,7 @@
         </div>
     </footer>
 </div>
+	<script type="text/javascript" src="../script/menu.js"></script>
 	<!-- include script to check form input -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="../script/form.js"></script>
