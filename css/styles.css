@@ -919,7 +919,7 @@ button[data-balloon]{overflow:visible}[data-balloon]{position:relative}[data-bal
 
 	}
 	.post-box.left .txt-area {
-		text-align: center;
+		text-align: left;
 	}
 
 }
