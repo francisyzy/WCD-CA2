@@ -14,9 +14,9 @@
 !function($){
   
   var defaults = {
-    tickerTime: 5,
+    tickerTime: 10,
     customRandomChar: false,
-    tickerCount: 5,
+    tickerCount: 10,
     opacityEffect: true,
     resetOnChange: false
 	};
