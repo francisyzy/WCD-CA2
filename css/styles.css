@@ -45,7 +45,7 @@ html {
 body {
 	color: #48443e;
 	background: #fff;
-	font: 12px/15px 'Merriweather', "Helvetica Neue", "Helvetica", sans-serif;
+	font: 20px/32px 'eurostileregular', "Helvetica Neue", "Helvetica", sans-serif;
 	/* min-width: 1280px; */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -185,14 +185,14 @@ a:hover, a:focus {
 	position: absolute;
 	height: 300px;
 	width: 100%;
-	top: 60px;
+	top: 0px;
 	right:0;
 	left: 0;
 	content: "";
 }
 #main:after{
 	background: linear-gradient(to bottom, #ffffff 0%,#fefefe 36%,#f3f3f2 58%,#d9d7d5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	position: absolute;
+	position: relative;
 	height: 120px;
 	width: 100%;
 	bottom: 0;
@@ -214,12 +214,19 @@ a:hover, a:focus {
 	text-align: center;
 	color: #ff8c00;
 	font-family: 'eurostileregular';
-	font-size: 200px;
+	font-size: 100px;
 }
 
 .welcome object{
 	margin-left: 500px;
 	margin-bottom: 400px;
+}
+
+#main .links{
+	/* display: inline; */
+	margin-left: 0;
+	margin-right: 0;
+	text-align: center;
 }
 
 /* Animation */
@@ -444,6 +451,9 @@ ul.breadcrumb li a:hover {
 #footer {
 	width: 100%;
 	background: #170d00;
+	position: fixed;
+	bottom: 0;
+	left: 0;
 }
 #footer .holder {
 	overflow: hidden;
@@ -586,7 +596,8 @@ ul.breadcrumb li a:hover {
 
 .bounceInRight {
     -webkit-animation-name: bounceInRight;
-    animation-name: bounceInRight
+    animation-name: bounceInRight;
+    display: inline-block;
 }
 
 @-webkit-keyframes bounceInLeft {
@@ -644,6 +655,7 @@ ul.breadcrumb li a:hover {
 .bounceInLeft {
   -webkit-animation-name: bounceInLeft;
   animation-name: bounceInLeft;
+  display: inline-block;
 }
 
 @-webkit-keyframes bounceInRight {

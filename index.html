@@ -10,24 +10,25 @@
 	<meta name="description" content="Personal blog/portfolio for Francis Yeo">
 	<meta name="author" content="Francis Yeo">
     <!-- include the site stylesheet -->
-    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
     <!-- include the site googlefonts -->
 	<!-- Illegal character in query: | is not allowed.
     <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
-	-->
+	
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	-->
 	<!-- include the site favicon -->
-	<link rel="icon" type="image/png" href="../images/YZYicon.ico">
+	<link rel="icon" type="image/png" href="images/YZYicon.ico">
 	<!-- Scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  	<script type="text/javascript" src="../jQuery/jquery.flipping_text.js"></script>
+  	<script type="text/javascript" src="jQuery/jquery.flipping_text.js"></script>
 	<script>
 		$(document).ready(function(){
 			$(".randomTyping").flipping_text({
 				tickerCount: 5,
-				tickerTime: 75
+				tickerTime: 45
 			});
 		});
 		
@@ -46,75 +47,35 @@
 <body>
 <!-- main container of all the page elements -->
 <div id="wrapper">
-    <!-- header -->
-	<div class="header">
-		<header id="header">
-			<div class="holder">
-				<div onclick="openNav()">
-					<nav class="menuIcon" onclick="menuIcon(this)">
-						<div class="bar1"></div>
-						<div class="bar2"></div>
-						<div class="bar3"></div>
-					</nav>
-				</div>
-				<!-- logo -->
-				<div class="logo">
-					<a href="index.html"><img src="../images/logo.png" alt="Francis Inc"></a>
-				</div>
-				<!-- navigation -->
-				
-				<div id="Sidenav" class="sidenav">
-					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-					<a href="#" class="active">Home</a>
-					<a href="showcase.html">Showcase</a>
-					<a href="about.html">About</a>
-				</div>
-				
-				<nav id="navigation">
-					<ul>
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="showcase.html">Showcase</a></li>
-						<li><a href="about.html">About</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-	</div>
     <!-- main -->
     <main id="main">
         <div class="holder">
 			<div class="welcome">
-            	<h1 class="randomTyping animated zoomIn">Welcome</h1>
-				<object data="../images/subtitle.svg" type="image/svg+xml">
-					<img src="../images/subtitle.png" alt="subtitle (fallback)"/>
-				</object>
+            	<h1 class="randomTyping animated zoomIn">Francis Yeo Zhao Yik</h1>
 			</div>
-            <!-- info-box -->
-			<a href="featuredProject.html">
-				<div class="info-box">
-					<div class="img-box">
-						<img src="../images/FeaturedProject/Poster.png" alt="Featured Arts" class="image">
+			<script src="jQuery/wow.min.js"></script>
+			<script>
+				new WOW().init();
+			</script>
+			<div class="links">
+				<a href="https://www.linkedin.com/in/francis-yeo-9783b141/">
+					<div data-wow-delay="0.8s" class="span3 wow bounceInLeft">
+						<h2>Linkedin</h2>
 					</div>
-					<div class="txt-area">
-						<h2>Featured Arts</h2>
-						<p>This project is designing artwork for a local fictional event about science and engineering.
-						</p>
+					<div data-wow-delay="0.8s" class="span3 wow bounceInRight">
+						<img src="images/Linkedin.png" height="45" width="45" style="vertical-align:middle" alt="Linkedin">
 					</div>
-				</div>
-			</a>
-            <!-- info-box -->
-			<a href="featuredCode.html">
-				<div class="info-box left">
-					<div class="img-box">
-						<img src="../images/FeaturedCode/ScreenShotCrop.png" alt="Showcase Code" class="image">
+				</a>
+				<br>
+				<a href="http://github.com/francisyzy">
+					<div data-wow-delay="1s" class="span3 wow bounceInLeft">
+						<h2>Github</h2>
 					</div>
-					<div class="txt-area">
-						<h2>Showcase Code</h2>
-						<p>Java Assignment to make a quiz with special features such as music playing and file loading. 
-						</p>
+					<div data-wow-delay="1s" class="span3 wow bounceInRight">
+						<img src="images/Github.png" height="45" width="45" style="vertical-align:middle" alt="Linkedin">
 					</div>
-				</div>
-			</a>
+				</a>
+			</div>
         </div>
     </main>
     <!-- footer -->
@@ -130,6 +91,6 @@
         </div>
     </footer>
 </div>
-<script type="text/javascript" src="../script/menu.js"></script>
+<script type="text/javascript" src="script/menu.js"></script>
 </body>
 </html>
